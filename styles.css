@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  /* colors */
+  --brorange: hsl(31, 77%, 52%);
+  --dkcyan: hsl(184, 100%, 22%);
+  --vdkcyan: hsl(179, 100%, 13%);
+  --ltgray: hsl(0, 0%, 95%);
+  --trwhite: hsla(0, 0%, 100%, 0.75);
+  /* Typography */
+  --ff-header: "Big Shoulders Display", cursive;
+  --ff-body: "Lexend Deca", sans-serif;
+  --fs-body: 0.9375rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* overall layout */
+body {
+  background-color: var(--ltgray);
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 5rem auto;
+  margin-top: 5rem;
+  margin-bottom: 3.25rem;
+}
+
+section {
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+}
+
+section img {
+  display: block;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+section h1 {
+  font-family: var(--ff-header);
+  font-weight: var(--fw-bold);
+  font-size: 2.5rem;
+  color: var(--ltgray);
+  text-transform: uppercase;
+  padding-bottom: 2.1875rem;
+}
+
+section p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  color: var(--trwhite);
+  padding-bottom: 1.875rem;
+  line-height: 1.5;
+}
+
+section a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--ff-body);
+  background-color: var(--ltgray);
+  padding: 0.9375rem 1.875rem;
+  border: 2px solid var(--ltgray);
+  border-radius: 1.875rem;
+  margin-bottom: 2.8125rem;
+}
+
+section a:hover {
+  color: var(--trwhite);
+  border-color: var(--ltgray);
+  transition: 200ms ease-in-out;
+}
+
+.attribution {
+  margin-bottom: 1rem;
+}
+
+/* sedan */
+.sedan {
+  background-color: var(--brorange);
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.sedan a {
+  color: var(--brorange);
+}
+
+.sedan a:hover {
+  background-color: var(--brorange);
+}
+
+/* suv */
+.suv {
+  background-color: var(--dkcyan);
+}
+
+.suv a {
+  color: var(--dkcyan);
+}
+
+.suv a:hover {
+  background-color: var(--dkcyan);
+}
+
+/* luxury */
+.luxury {
+  background-color: var(--vdkcyan);
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.luxury a {
+  color: var(--vdkcyan);
+}
+
+.luxury a:hover {
+  background-color: var(--vdkcyan);
+}
+
+/* desktop */
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    max-width: 900px;
+  }
+
+  section {
+    text-align: left;
+    width: 33.333%;
+  }
+
+  section p {
+    margin-bottom: 2.5rem;
+  }
+
+  /* sedan */
+  .sedan {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+  /* suv */
+
+  /* luxury */
+  .luxury {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+}
