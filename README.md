@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Web](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/ASteven21/3-Column-Card)
+- Live Site URL: [Live Web](https://asteven21.github.io/3-Column-Card/)
 
 ## My process
 
